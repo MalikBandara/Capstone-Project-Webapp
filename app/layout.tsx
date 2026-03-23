@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${geist.variable} font-sans antialiased bg-slate-50`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geist.variable} font-sans antialiased bg-slate-50`} suppressHydrationWarning>
         <SidebarProvider>
           <Sidebar />
           <div className="lg:ml-64 flex flex-col min-h-screen">
